@@ -6,7 +6,7 @@ class App extends Component {
     userData: []
   };
   async componentDidMount(){
-      const response = await fetch('https://62vgvcn9wi.execute-api.ap-south-1.amazonaws.com/Dev');
+      const response = await fetch('awsurl');
       const body = await response.json();
       this.setState({ userData:body,isLoading:false })
   }
